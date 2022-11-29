@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="trainee.system.mapper.InGroupPerformanceMapper">
+
+
+    <insert id="inGroupPerf">
+        INSERT INTO tbl_trainee_in_group_evaluation (
+            trainee_evaluation_id,
+            evaluator_user_id,
+            work_attitude,
+            professional_level,
+            personal_growth,
+            teamwork,
+            work_under_pressure,
+            created_by,
+            updated_by,
+            created_at,
+            updated_at
+        )
+        VALUES(
+            #{traineeEvaluationId},
+            #{evaluatorUserId},
+            #{workAttitude},
+            #{professionalLevel},
+            #{personalGrowth},
+            #{teamwork},
+            #{workUnderPressure},
+            #{createdBy},
+            #{updatedBy},
+            #{createdAt},
+            #{updatedAt}
+        )
+
+    </insert>
+    <insert id="insertRecord">
+        INSERT INTO tbl_trainee_evaluation (
+        trainee_user_id,
+        trainee_evaluation_date,
+        created_At
+        )
+        VALUES (
+        #{traineeUserId}
+        #{traineeEvaluationDate}
+        #{createdAt}
+        )
+
+    </insert>
+
+    <select id="existById" resultType="trainee.system.DTO.InGroupPerformanceDTO">
+        SELECT
+        trainee_evaluation_id
+        FROM
+        tbl_trainee_evaluation
+        WHERE
+        trainee_user_id = #{traineeUserId} AND EXTRACT(YEAR_MONTH FROM trainee_evaluation_date) =
+        #{traineeEvaluationDate}
+    </select>
+
+
+    <select id="selectUserByRole" resultType="boolean">
+        SELECT EXISTS(
+        SELECT
+            u.user_id
+        FROM
+            tbl_user AS u
+        INNER JOIN
+        tbl_trainee_evaluation as te on te.trainee_user_id = u.user_id
+        WHERE
+        u.role_id = 3 AND u.user_id = #{traineeUserId} and EXTRACT(YEAR_MONTH FROM trainee_evaluation_date) = #{traineeEvaluationDate}
+        ) AS boolean
+    </select>
+
+    <select id="selectUser" resultType="boolean">
+        SELECT EXISTS(
+        SELECT
+            user_id
+        FROM
+            tbl_user
+        WHERE
+            role_id = 3 AND u.user_id = #{traineeUserId}
+      ) AS boolean
+    </select>
+
+</mapper>
