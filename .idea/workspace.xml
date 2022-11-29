@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2e4cb77-31b5-46d7-90b9-800029397322" name="Changes" comment="initialize">
+    <list default="true" id="f2e4cb77-31b5-46d7-90b9-800029397322" name="Changes" comment="InGroupPerformance mapper">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trainee/system/DTO/ChangePasswordDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trainee/system/DTO/ChangePasswordDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trainee/system/mapper/InGroupPerformanceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trainee/system/mapper/InGroupPerformanceMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trainee/system/service/impl/InGroupPerformancesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trainee/system/service/impl/InGroupPerformancesServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/InGroupPerformanceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/InGroupPerformanceMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,13 +35,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/norbs/Desktop/traineeSystemV2/traineeSystemV2/.idea"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\norbs\Desktop\traineeSystemV2\traineeSystemV2\.idea" />
       <recent name="C:\Users\norbs\Desktop\traineeSystemV2\traineeSystemV2\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -81,7 +81,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669697146726</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="InGroupPerformance Interface">
+      <created>1669701136087</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669701136087</updated>
+    </task>
+    <task id="LOCAL-00005" summary="InGroupPerformance mapper">
+      <created>1669702044711</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669702044711</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,11 +123,12 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialize" />
-    <option name="LAST_COMMIT_MESSAGE" value="initialize" />
+    <MESSAGE value="InGroupPerformance Interface" />
+    <MESSAGE value="InGroupPerformance mapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="InGroupPerformance mapper" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
