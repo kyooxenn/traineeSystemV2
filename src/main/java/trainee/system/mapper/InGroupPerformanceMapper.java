@@ -17,4 +17,6 @@ public interface InGroupPerformanceMapper {
 
     void insertRecord(InGroupPerformanceDTO inGroupPerformanceDTO);
 
+    void inGroupPerfNewTraineeId(InGroupPerformanceDTO inGroupPerformanceDTO);
+
 }
