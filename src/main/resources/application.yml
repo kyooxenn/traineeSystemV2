@@ -1,8 +1,15 @@
 spring:
+  main:
+    allow-circular-references: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/trainee_db?allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: root
   security:
     ignored: /**
   profiles:
-    active: dev
+    active: default
 mybatis:
   mapperLocations: /mapper/*Mapper.xml
 management:
@@ -15,13 +22,13 @@ management:
 app:
   id: kkcloud-trainee-system
 
-apollo:
-  autoUpdateInjectedSpringProperties: true
-  bootstrap:
-    enabled: true
-    eagerLoad:
-      enabled: true
-    namespaces: application
+#apollo:
+#  autoUpdateInjectedSpringProperties: true
+#  bootstrap:
+#    enabled: true
+#    eagerLoad:
+#      enabled: true
+#    namespaces: application
 
 #spring:
 #  security:

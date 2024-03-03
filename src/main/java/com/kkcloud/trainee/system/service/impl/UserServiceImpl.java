@@ -40,7 +40,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public String register(RegisterDTO user) throws UserAlreadyExistException {
-
         //Let's check if user already registered with us
         if(userMapper.userExists(user.getEmail(), user.getUserUsername())){
             throw new UserAlreadyExistException("User already exists for this email");

@@ -3,10 +3,10 @@ package com.kkcloud.trainee.system.mapper;
 import com.kkcloud.trainee.system.DTO.InGroupPerformanceDTO;
 import com.kkcloud.trainee.system.DTO.IndividualGradeDTO;
 import com.kkcloud.trainee.system.DTO.IndividualRankingDTO;
-import com.kkcloud.trainee.system.DTO.OverallScoreDTO;
 import com.kkcloud.trainee.system.model.IGPModel;
 import com.kkcloud.trainee.system.model.LOCModel;
 import org.apache.ibatis.annotations.Mapper;
+
 
 import java.util.List;
 
